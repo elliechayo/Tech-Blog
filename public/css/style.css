@@ -1,219 +1,220 @@
 * {
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
-     font-family: "Poppins", sans-serif;
-   }
-   
-   body {
-     background: #eee;
-   }
-   
-   .container {
-     max-width: 900px;
-     margin: 0 auto;
-   }
-   /*Header styles START*/
-header {
-     background: #333;
-     padding: 20px 0;
-   }
-   
-   .title {
-     font-size: 22px;
-     padding: 10px;
-     text-align: center;
-     color: white;
-     background-color: #f05f40;
-     border-radius: 8px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-     display: block;
-     margin: 0 auto;
-     max-width: 80%;
-     position: fixed;
-     top: 0;
-     left: 50%;
-     transform: translateX(-50%);
-   }
-   /* .title {
-     font-size: 22px;
-     padding: 10px 0;
-     text-align: center;
-     color: white;
-     background: rgb(211, 47, 240);
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   } */
-   /* .title {
-     font-size: 22px;
-     background: green;
-     padding: 10px 0;
-   } */
-   
-   .title h2 {
-     text-align: center;
-     color: white;
-     letter-spacing: 3px;
-   }
-   
-   nav {
-     display: flex;
-     justify-content: space-between;
-     max-width: 600px;
-     margin: 20px auto 0;
-     padding: 0 5px;
-   }
-   
-   nav a {
-     text-decoration: none;
-     color: white;
-   }
-   
-   /*Header styles END*/
-   
-   /* common styles START */
-   
-   .page-title {
-     margin-top: 30px;
-     padding: 10px 0;
-     text-align: center;
-   }
-   
-   form {
-     max-width: 600px;
-     margin: 20px auto;
-     border: 1px solid lightgray;
-     padding: 10px;
-     background: white;
-     border-radius: 5px;
-   }
-   
-   .formgroup input,
-   .formgroup textarea {
-     padding: 12px;
-     border: 1px solid lightgray;
-     border-radius: 5px;
-     outline: none;
-     width: 100%;
-   }
-   
-   .formgroup {
-     margin-top: 10px;
-   }
-   
-   .submit-btn {
-     width: 100%;
-     background: rgb(69, 69, 221);
-     color: white;
-     border-radius: 5px;
-     outline: none;
-     border: none;
-     margin-top: 20px;
-     padding: 12px;
-     cursor: pointer;
-   }
-   
-   .error {
-     text-align: center;
-     color: red;
-     margin: 5px 0;
-   }
-   
-   .section {
-     margin-top: 30px;
-   }
-   
-   .card {
-     padding: 10px;
-     border: 1px solid lightgray;
-     width: 100%;
-     border-radius: 5px;
-     margin: 20px 0;
-   }
-   
-   .card .date {
-     color: gray;
-   }
-   
-   .card h4 {
-     font-size: 18px;
-   }
-   
-   .card .content {
-     margin: 10px 0;
-     white-space: nowrap;
-     overflow: hidden;
-     text-overflow: ellipsis;
-   }
-   
-   .card a {
-     text-decoration: none;
-     color: rgb(69, 69, 221);
-     display: block;
-     margin-top: 10px;
-   }
-   
-   .card a.delete-post {
-     color: red;
-   }
-   
-   .section-title {
-     margin: 30px 0 10px;
-     padding: 10px;
-     text-align: center;
-     background-color: lightgray;
-     border-radius: 5px;
-   }
-   /* .section-title {
-     margin: 30px 0 10px;
-     text-align: center;
-   } */
-   
-   .divider {
-     max-width: 900px;
-     margin: 20px auto;
-     background: lightgray;
-     height: 2px;
-   }
-   
-   /* common styles END */
-   
-   /* dashboard styles START */
-   
-   .create-post {
-     text-decoration: none;
-     margin: 10px;
-     background: rgb(69, 69, 221);
-     color: white;
-     padding: 10px;
-     border-radius: 5px;
-     display: block;
-     text-align: center;
-   }
-   
-   .post-info {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin: 20px 0;
-     color: gray;
-   }
-   
-   .comment-card {
-     background: white;
-     border-radius: 5px;
-     padding: 10px;
-     margin-top: 10px;
-   }
-   
-   .comment-card .date {
-     color: gray;
-     font-size: 14px;
-     margin-bottom: 10px;
-   }
-   
-   .comment-form {
-     max-width: 100%;
-   }
-   
-   /* dashboard styles END */
-   
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eee;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*Header styles START*/
+
+  /*background: linear-gradient(to top, #1f3e75, #2a5096);*/
+  header {
+    background: linear-gradient(to top, rgb(43, 43, 143), rgb(69, 69, 221));
+ 
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+  }
+  
+  
+
+.title {
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.title h2 {
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 20px auto 0;
+  padding: 0 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Header styles END*/
+
+/* common styles START */
+
+.page-title {
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid lightgray;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+}
+
+.formgroup input,
+.formgroup textarea {
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.formgroup {
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: rgb(69, 69, 221);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin: 5px 0;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid lightgray;
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.card .date {
+  color: gray;
+}
+
+.card h4 {
+  font-size: 18px;
+ 
+}
+
+.card .content {
+  margin: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card a {
+  text-decoration: none;
+  color: rgb(69, 69, 221);
+  display: block;
+  margin-top: 10px;
+}
+
+.card a.delete-post {
+  color: red;
+}
+
+.section-title {
+  margin: 30px 0 10px;
+  text-align: center;
+}
+
+.divider {
+  max-width: 900px;
+  margin: 20px auto;
+  background: lightgray;
+  height: 2px;
+}
+
+/* common styles END */
+
+/* dashboard styles START */
+
+.create-post {
+  text-decoration: none;
+  margin: 10px;
+  background: rgb(69, 69, 221);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  color: gray;
+}
+
+.comment-card {
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comment-card .date {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.comment-form {
+  max-width: 100%;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Medium devices (between 577px and 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Large devices (between 769px and 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+
+
