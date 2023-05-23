@@ -3,5 +3,8 @@
     <p class="date">{{formatDate createdAt}}</p>
     <p>Author: {{user.username}}</p>
     <p class="content">{{content}}</p>
+    <div class="divider"></div>
     <a href="/viewPost/{{id}}">View Post</a>
+    <a href="/dashboard/editPost/{{id}}">Edit Post</a>
+    <a href="/dashboard/deletePost/{{id}}" class="delete-post">Delete Post</a>
 </div>

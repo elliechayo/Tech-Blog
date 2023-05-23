@@ -1,0 +1,15 @@
+<main class="container">
+    <h2 class="page-title">Hello There!</h2>
+    <form action="/auth/register" method="post">
+        {{#if error}}
+        <p class="error">{{error}}</p>
+        {{/if}}
+        <div class="formgroup">
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="formgroup">
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <button class="submit-btn">Register</button>
+    </form>
+</main>

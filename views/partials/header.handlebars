@@ -1,0 +1,16 @@
+<header>
+    <div class="title">
+        <h2>Tech Blog</h2>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#unless user}}
+        <a href="/auth/login">Login</a>
+        <a href="/auth/register">Register</a>
+        {{/unless}}
+        {{#if user}}
+        <a href="/auth/logout">Logout</a>
+        {{/if}}
+    </nav>
+</header>
