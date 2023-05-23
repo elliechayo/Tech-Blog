@@ -3,7 +3,7 @@ const { Post, User, Comment } = require("../models");
 const router = require("express").Router();
 
 
-// GET route /dashboard
+// GET route for "/dashboard"
 router.get("/", async (req, res) => {
     try {
         let allPosts = await Post.findAll({
@@ -27,14 +27,14 @@ router.get("/", async (req, res) => {
 });
 
 
-// GET route /dashboard/createPost
+// GET route for "/dashboard/createPost"
 router.get("/createPost", (req, res) => {
     res.render("createPost", { user: req.session.user });
 });
 
 
 
-//  GET route /dashboard/createPost
+// POST route for "/dashboard/createPost"
 router.post("/createPost", async (req, res) => {
     const { title, content } = req.body;
     try {
@@ -55,7 +55,7 @@ router.post("/createPost", async (req, res) => {
 });
 
 
-//  GET route /dashboard/deletepost/:id
+// GET route for "/dashboard/deletePost/:id"
 router.get("/deletePost/:id", async (req, res) => {
     const { id } = req.params;
     try {
@@ -73,7 +73,7 @@ router.get("/deletePost/:id", async (req, res) => {
 
 
 
-// POST route /dashboard/addComment/:id
+// POST route for "/dashboard/addComment/:id"
 router.post("/addComment/:id", async (req, res) => {
     const { id: postId } = req.params;
     const { comment } = req.body;
@@ -91,7 +91,7 @@ router.post("/addComment/:id", async (req, res) => {
 });
 
 
-//  GET route /dashboard/editPost/:id
+// GET route for "/dashboard/editPost/:id"
 router.get("/editPost/:id", async (req, res) => {
     const { id } = req.params;
     try {
@@ -112,7 +112,7 @@ router.get("/editPost/:id", async (req, res) => {
 });
 
 
-//  POST route /dashboard/editPost/:id
+// POST route for "/dashboard/editPost/:id"
 router.post("/editPost/:id", async (req, res) => {
     const { id } = req.params;
     try {
