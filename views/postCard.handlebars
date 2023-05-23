@@ -1,0 +1,19 @@
+<main class="container">
+    <h2 class="page-title">Create A New Post</h2>
+    <form action="/dashboard/createPost" method="post">
+        {{#if error}}
+         <!-- Display an error message if the "error" variable exists -->
+        <p class="error">{{error}}</p>
+        {{/if}}
+        <div class="formgroup">
+            <!-- Input field for the post title -->
+            <input type="text" name="title" placeholder="Post title">
+        </div>
+        <div class="formgroup">
+            <!-- Textarea field for the post content -->
+            <textarea name="content" cols="30" rows="10" placeholder="Post Content"></textarea>
+        </div>
+  <!-- Submit button for creating the post -->
+        <button type="submit" class="submit-btn">Create Post</button>
+    </form>
+</main>

@@ -1,0 +1,14 @@
+<main class="container">
+    <section class="section">
+      <!-- Link to create a new post -->
+        <a href="/dashboard/createPost" class="create-post">Create New Post &plus;</a>
+    </section>
+    {{#if posts}}
+    <section class="section cards">
+        <h3 class="section-title">Your Posts</h3>
+        {{#each posts}}
+        {{> userPostCard this}}
+        {{/each}}
+    </section>
+    {{/if}}
+</main>
