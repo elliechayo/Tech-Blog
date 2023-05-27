@@ -22,4 +22,10 @@ if (process.env.JAWSDB_URL) {
 
 
 
-module.exports = sequelize;
+// module.exports = sequelize;
+module.exports = {
+  HOST: "us-cdbr-east-06.cleardb.net",
+  USER: "bc7faf7100afe1",
+  PASSWORD: "237bafe4",
+  DB: "heroku_960ea987615bad3"
+};
