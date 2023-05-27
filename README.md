@@ -1,54 +1,117 @@
-Your challenge this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
-
-User Story
-AS A developer who writes about tech
-I WANT a CMS-style blog site
-SO THAT I can publish articles, blog posts, and my thoughts and opinions
-Acceptance Criteria
-GIVEN a CMS-style blog site
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-WHEN I click on the homepage option
-THEN I am taken to the homepage
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
-WHEN I choose to sign up
-THEN I am prompted to create a username and password
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-WHEN I click on an existing blog post
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-WHEN I click on the button to add a new blog post
-THEN I am prompted to enter both a title and contents for my blog post
-WHEN I click on the button to create a new blog post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-WHEN I click on the logout option in the navigation
-THEN I am signed out of the site
-WHEN I am idle on the site for more than a set time
-THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
-Mock-Up
-The following animation demonstrates the application functionality: [link to mock-up](https://drive.google.com/file/d/1TWvezRLe4yDhEpOz34MFxjCfkZf65-PO/view)
+# Tech-Blog
 
 
+The objective of the project was to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
+
+The application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+
+## Table of Contents
+
+* [Description](#Description)
+* [Technologies](#Technologies)
+* [Preview](#preview)
+* [Links](#links)
+* [License](#license)
 
 
-Getting Started
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the express-handlebarsLinks to an external site. package to use Handlebars.js for your Views, use the MySQL2Links to an external site. and SequelizeLinks to an external site. packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+## Description 
 
-You’ll also need the dotenv packageLinks to an external site. to use environment variables, the bcrypt packageLinks to an external site. to hash passwords, and the express-sessionLinks to an external site. and connect-session-sequelizeLinks to an external site. packages to add authentication.
+When users visit the tech blog site for their first time, they are presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in.
+
+When a user clicks on the homepage option, he/she is taken to the homepage.
+
+When a user clicks on any other links in the navigation, he/she is prompted to either sign up or sign in.
+
+When a user chooses to sign up, he/she is prompted to create a username and password.
+
+When a user clicks on the sign-up button, user’s credentials are saved, and he/she is logged into the site.
+
+When a user revisits the site at a later time and choose to sign in, he/she is prompted to enter my username and password.
+
+When a user is signed into the site, he/she sees navigation links for the homepage, the dashboard, and the option to log out.
+
+When a user clicks on the homepage option in the navigation, he/she is taken to the homepage and presented with existing blog posts that include the post title and the date created.
+
+When a user clicks on an existing blog post, he/she is presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment.
+
+When a user enters a comment and click on the submit button while signed in, the comment is saved, and the post is updated to display the comment, the comment creator’s username, and the date created.
+
+When a user clicks on the dashboard option in the navigation, he/she is taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post.
+
+When a user clicks on the button to add a new blog post, he/she is prompted to enter both a title and contents for my blog post.
+
+When a user clicks on the button to create a new blog post, the title and contents of his/her post are saved, and user is taken back to an updated dashboard with his/her new blog post.
+
+When a user clicks on one of his/her existing posts in the dashboard, user is able to delete or update his/her post and taken back to an updated dashboard.
+
+When a user clicks on the logout option in the navigation, the user is signed out of the site.
+
+When use is idle on the page for more than a set time, user is  I am signed out of the site.
+
+## Technologies
+<hr>
+
+- Node 
+- MySQL2 package
+- Sequelize
+- dotenv package
+- Handlebars.js
+- HTML/CSS
+- Javascript
+- Express.js
+- bcrypt
 
 
-NOTE
-The express-sessionLinks to an external site. package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+ 
+
+## Preview
+<hr>
+
+The following images show the web application's appearance and functionality:
+ ### Deployed Application
+![Deployed app Homepage](/assests/image1.png)
+### Register View
+![Register ](/assests/image2.png)
+### Sign-In View
+![Sign in](/assests/image3.png)
+### User Homepage View
+![User Homepage](/assests/image4.png)
+### User Dashboard View
+![User Dashboard](/assests/image5.png)
+### Create a Post View
+![Create a post](/assests/image6.png)
+### Edit a Post View
+![Edit a post](/assests/image7.png)
+### Comment on s Post View
+![Comment on a post](/assests/image8.png)
+
+
+## Links
+<hr>
+
+[URL of the deployed application](https://tech-blog-is.herokuapp.com/)
+
+[URL of the GitHub repository](https://github.com/elliechayo/Tech-Blog)
+
+
+## License
+<hr>
+
+MIT License
+
+Copyright (c) [2023] 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
