@@ -89,7 +89,7 @@ The following images show the web application's appearance and functionality:
 ## Links
 <hr>
 
-[URL of the deployed application](https://tech-blog-is.herokuapp.com/)
+[URL of the deployed application](https://tech-blog-io.herokuapp.com/)
 
 [URL of the GitHub repository](https://github.com/elliechayo/Tech-Blog)
 
