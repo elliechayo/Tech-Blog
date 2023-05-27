@@ -2,7 +2,13 @@ const Sequelize = require("sequelize");
 require("dotenv").config();
 
 
-//const Sequelize = require("sequelize");
+
+// let sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+//     host: "127.0.0.1",
+//     port: "3306",
+//     dialect: "mysql"
+// });
+
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
@@ -19,13 +25,14 @@ if (process.env.JAWSDB_URL) {
       }
     );
   }
+module.exports = sequelize;
 
 
 
 // module.exports = sequelize;
-module.exports = {
-  HOST: "us-cdbr-east-06.cleardb.net",
-  USER: "bc7faf7100afe1",
-  PASSWORD: "237bafe4",
-  DB: "heroku_960ea987615bad3"
-};
+// module.exports = {
+//   HOST: "us-cdbr-east-06.cleardb.net",
+//   USER: "bc7faf7100afe1",
+//   PASSWORD: "237bafe4",
+//   DB: "heroku_960ea987615bad3"
+// };
