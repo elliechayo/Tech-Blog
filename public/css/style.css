@@ -19,24 +19,30 @@ body {
   /*background: linear-gradient(to top, #1f3e75, #2a5096);*/
   header {
     background: linear-gradient(to top, rgb(43, 43, 143), rgb(69, 69, 221));
- 
     background-size: cover;
     background-position: center;
     padding: 20px 0;
   }
   
-  
-
 .title {
   font-size: 30px;
   padding: 10px 0;
-}
-
-.title h2 {
   text-align: center;
   color: white;
   letter-spacing: 3px;
 }
+
+
+
+.title h3 {
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  
+}
+
 
 nav {
   display: flex;
@@ -141,6 +147,7 @@ form {
 }
 
 .section-title {
+  font-size: 30px;
   margin: 30px 0 10px;
   text-align: center;
 }
@@ -191,6 +198,22 @@ form {
 .comment-form {
   max-width: 100%;
 }
+/*new addition */
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 5px;
+  background: white;
+  padding: 12px 8px;
+  width: 100%;
+  margin-top: 10px;
+}
+/*new addition */
 
 
 /* Media Queries for Responsive Design */
