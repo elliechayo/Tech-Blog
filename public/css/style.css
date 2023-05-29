@@ -57,6 +57,9 @@ nav a {
   color: white;
 }
 
+nav a:hover {
+  color: rgb(255, 115, 0);
+}
 /*Header styles END*/
 
 /* common styles START */
